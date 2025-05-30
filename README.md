@@ -2,15 +2,9 @@
 
 ## Démarrer
 
-### Installer les dépendance
-Pour lancer le projet il faut `npm install` dans le dossier frontend ainsi que le dossier backend.
-
 ### Lancer le docker compose
-Puis `docker compose up` à la racine
-
-### Setupe la base de donnée
-Enfin il faut mettre en place la base de donnée si ce n'est pas déja le cas avec le script dans backend nomé `schema.sql` dans une base de donnéee nommée formulaire.
+Puis `docker compose up` à la racine qui va automatiser la creation de la BD formulaire, le frontend en react et le serveur node en plus des blocs existants du projet de base.
 
 ### Tout est bon
 
-Le projet est visible depuis le port 3000 (le frontend) communique au serveur node sur le port 3001 et enregistre dans la BD.
+Le projet est visible depuis localhost; le port 3000 (le frontend) communique au serveur node sur le port 3001 et enregistre dans la BD accessible depuis le port 8080.
