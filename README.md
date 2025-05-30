@@ -3,7 +3,7 @@
 ## Démarrer
 
 ### Installer les dépendance
-Pour lancer le projet il faut `npm install` dans le dossier frontend.
+Pour lancer le projet il faut `npm install` dans le dossier frontend ainsi que le dossier backend.
 
 ### Lancer le docker compose
 Puis `docker compose up` à la racine
