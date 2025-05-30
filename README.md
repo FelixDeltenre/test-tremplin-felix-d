@@ -1,41 +1,16 @@
 # Test dev web Tremplin
 
-## Rendu
+## Démarrer
 
-<span style="color:red">**Rendre le projet sur github, en dépôt publique, envoyer le lien
-à [production@majordhom.fr](mailto:production@majordhom.fr), si vous m'envoyez un fichier zip je regarde pas. :)**</span>
+### Installer les dépendance
+Pour lancer le projet il faut `npm install` dans le dossier frontend.
 
+### Lancer le docker compose
+Puis `docker compose up` à la racine
 
-## Démarrer la stack LAMP (optionnel)
-_Vous pouvez aussi monter votre propre serveur de développement._
+### Setupe la base de donnée
+Enfin il faut mettre en place la base de donnée si ce n'est pas déja le cas avec le script dans backend nomé `schema.sql` dans une base de donnéee nommée formulaire.
 
-Cloner le repo github
-> git clone https://github.com/Majordhom/test-tremplin.git
+### Tout est bon
 
-Démarer la stack Apache / Mysql / PhpMyAdmin avec docker.
-
-> docker compose up -d
-
-Apache est ouvert sur le port :80 (http://localhost:80).\
-Phpmyadmin est ouvert sur le port :8080 (http://localhost:8080)\
-Mysql est ouvert sur :3306\
-\
-Utilisateur et mdp mysql: `root` et `verysecurepassword`
-
-## Exercice
-
-*Limite de temps: 2 jours*
-
-![alt text](./maquette.png)
-
-Vous devez intégrer cette maquette au site web de l'agence, enregistrez les données du formulaire dans la base de
-données.
-Nous voulons voir votre façon d'intégrer une maquette de manière *responsive*, comment vous organisez votre code (split des fichiers, commentaires, balises html, écriture des fonctions ...), et
-comment vous  gérez la sécurité de celui-ci.
-
-Le but est de montrer ce que vous savez faire: 
-- Intégrer une maquette front avec minutie
-- Connaissance d'un framework front ou back (React, Angular, Typescript, Laravel, Symfony, NextJS ...) 
-- Autres outils pour la gestion de dates, d'un captcha etc.
-
-Bonne chance !
+Le projet est visible depuis le port 3000 (le frontend) communique au serveur node sur le port 3001 et enregistre dans la BD.
